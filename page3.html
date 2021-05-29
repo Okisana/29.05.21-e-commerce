@@ -102,88 +102,56 @@
                     take you from day into night, while the collection in skater and midi will have you spoilt for choice. Accessorise your look with dainty jewellery and a clutch, finally finishing off with a pair of smart wedges or heels.
                 </p>
 
-                <table class="variations" cellspacing="0">
-                    <tbody>
-                        <tr>
-                            <td class="label">
-                                <h4>
-                                    <label for="color">Color</label>
-                                </h4>
-                            </td>
-                        </tr>
 
-                        <tr>
+                <div class="label">
+                    <h4>
+                        <label for="size">Size</label>
+                    </h4>
 
-                            <td class="value">
-                                <div class="variation-selector variation-select-image hidden"><select id="pa_auduma-krasa" class="" name="attribute_pa_auduma-krasa" data-attribute_name="attribute_pa_auduma-krasa" data-show_option_none="yes"><option value="">Izvēlēties</option><option value="dzeltena"  selected='selected'>Dzeltena</option><option value="peleka" >Pelēka</option><option value="sarkana" >Sarkana</option><option value="zala" >Zaļa</option><option value="zila" >Zila</option></select></div>
-                                <div class="tawcvs-swatches" data-attribute_name="attribute_pa_auduma-krasa"><span class="swatch swatch-image swatch-dzeltena selected" data-value="dzeltena"><img src="https://manaklade.lv/wp-content/uploads/2020/04/audums_dzeltens.png" alt="Dzeltena">Dzeltena<span class="swatch__tooltip">Dzeltena</span></span>
-                                    <span class="swatch swatch-image swatch-peleka " data-value="peleka"><img src="https://manaklade.lv/wp-content/uploads/2020/05/Screenshot-2020-05-02-at-15.28.02.png" alt="Pelēka">Pelēka<span class="swatch__tooltip">Pelēka</span></span>
-                                    <span class="swatch swatch-image swatch-sarkana " data-value="sarkana"><img src="https://manaklade.lv/wp-content/uploads/2020/04/audoms_sarkams.png" alt="Sarkana">Sarkana<span class="swatch__tooltip">Sarkana</span></span>
+                    <td class="value">
+                        <div class="variation-selector "><select id="size" class="" data-show_option_none="yes"><option value="">Choose</option><option value="S"  selected='selected'>S</option><option value="M" >M</option><option value="L" >L</option></select></div>
 
+                        <div class="row row-cols-1 row-cols-md-3 mb-3 justify-content-center mt-5">
+                            <div class="col">
+                                <div class="card mb-4 rounded-3 shadow-sm">
+                                    <div class="card-header py-3">
+                                        <h4 class="my-0 fw-normal text-center">Floral dress</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title pricing-card-title text-center">EUR 19.99</h4>
+
+                                        <button onclick="myFunction()" type="button" class="w-100 btn btn-lg btn-outline-primary">Add to cart</button>
+                                    </div>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="label">
-                                <h4>
-                                    <label for="pa_lapaspusu-skaits">Lapaspušu skaits</label>
-                                </h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-
-                            <td class="value">
-                                <div class="variation-selector variation-select-label hidden"><select id="pa_lapaspusu-skaits" class="" name="attribute_pa_lapaspusu-skaits" data-attribute_name="attribute_pa_lapaspusu-skaits" data-show_option_none="yes"><option value="">Izvēlēties</option><option value="60"  selected='selected'>60</option><option value="108" >108</option><option value="204" >204</option></select></div>
-                                <div class="tawcvs-swatches" data-attribute_name="attribute_pa_lapaspusu-skaits"><span class="swatch swatch-label swatch-60 selected" data-value="60">60<span class="swatch_tooltip">60</span></span><span class="swatch swatch-label swatch-108 " data-value="108">108<span class="swatch_tooltip">108</span></span>
-                                    <span class="swatch swatch-label swatch-204 " data-value="204">204<span class="swatch__tooltip">204</span></span>
-                                </div>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
-                <div class="row row-cols-1 row-cols-md-3 mb-3 justify-content-center mt-5">
-                    <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm">
-                            <div class="card-header py-3">
-                                <h4 class="my-0 fw-normal text-center">Floral dress</h4>
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title pricing-card-title text-center">EUR 19.99</h4>
-
-                                <button onclick="myFunction()" type="button" class="w-100 btn btn-lg btn-outline-primary">Add to cart</button>
                             </div>
                         </div>
-                    </div>
                 </div>
+
             </div>
 
-        </div>
 
 
+            <div class="card-footer mt-8">
+                <footer class="blockquote-footer pt-3">
+                    © Update Privacy Preferences AN ELITE CAFEMEDIA PETS PUBLISHER
+                </footer>
+            </div>
 
-        <div class="card-footer mt-8">
-            <footer class="blockquote-footer pt-3">
-                © Update Privacy Preferences AN ELITE CAFEMEDIA PETS PUBLISHER
-            </footer>
-        </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+            <script>
+                $(".imgRow").hover(
+                    function() {
+                        const link = $(this).attr('src');
+                        $('#bigImage').attr('src', link);
+                    }
+                );
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-        <script>
-            $(".imgRow").hover(
-                function() {
-                    const link = $(this).attr('src');
-                    $('#bigImage').attr('src', link);
+                function myFunction() {
+                    alert("ITEM IS ADDED TO CART");
                 }
-            );
-
-            function myFunction() {
-                alert("ITEM IS ADDED TO CART");
-            }
-        </script>
+            </script>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
