@@ -1,14 +1,15 @@
-.formContainer{
-    max-width: 300px;
+.trTop {
+  border-bottom: none;
 }
-.formContainer input{
-    border-radius: 0%;
-    border-color: black;
-    max-height: 30px;
+
+.epmty5 {
+  height: 100px;
 }
-.epmty5{
-    height: 100px;
+.tdImage {
+  max-width: 130px;
+  max-height: 200px;
+  margin: 0 auto;
 }
-select{
-    max-height: 35px;
+tr {
+  border-bottom: 0.01rem solid grey;
 }
