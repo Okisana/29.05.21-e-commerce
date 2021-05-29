@@ -101,47 +101,67 @@
                     on-trend midis. Finish with stylish saddle bags for smart casual chic. Our beautiful range includes bold colourways in flattering bodycon, floaty maxis and on-trend bardots. Update your season’s wardrobe with lace detailed style to
                     take you from day into night, while the collection in skater and midi will have you spoilt for choice. Accessorise your look with dainty jewellery and a clutch, finally finishing off with a pair of smart wedges or heels.
                 </p>
-                <div class="row row-cols-1 row-cols-md-3 mb-3 justify-content-center mt-5">
-                    <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm">
-                            <div class="card-header py-3">
-                                <h4 class="my-0 fw-normal text-center">Floral dress</h4>
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title pricing-card-title text-center">EUR 19.99</h4>
 
-                                <button onclick="myFunction()" type="button" class="w-100 btn btn-lg btn-outline-primary">Add to cart</button>
-                            </div>
+
+
+                <h4>
+                    <label for="size">Choose size:</label>
+                </h4>
+
+
+                <td class="value">
+                    <div><select id="size" class="" data-show_option_none="yes"></select>
+                        <option value="">Choose size</option>
+                        <option value="S" selected='selected'>S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        </select>
+                    </div>
+
+
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 mb-3 justify-content-center mt-5">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal text-center">Floral dress</h4>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title pricing-card-title text-center">EUR 19.99</h4>
+
+                            <button onclick="myFunction()" type="button" class="w-100 btn btn-lg btn-outline-primary">Add to cart</button>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
+    </div>
 
 
-        <div class="card-footer mt-8">
-            <footer class="blockquote-footer pt-3">
-                © Update Privacy Preferences AN ELITE CAFEMEDIA PETS PUBLISHER
-            </footer>
-        </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-        <script>
-            $(".imgRow").hover(
-                function() {
-                    const link = $(this).attr('src');
-                    $('#bigImage').attr('src', link);
-                }
-            );
+    <div class="card-footer mt-8">
+        <footer class="blockquote-footer pt-3">
+            © Update Privacy Preferences AN ELITE CAFEMEDIA PETS PUBLISHER
+        </footer>
+    </div>
 
-            function myFunction() {
-                alert("ITEM IS ADDED TO CART");
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script>
+        $(".imgRow").hover(
+            function() {
+                const link = $(this).attr('src');
+                $('#bigImage').attr('src', link);
             }
-        </script>
+        );
+
+        function myFunction() {
+            alert("ITEM IS ADDED TO CART");
+        }
+    </script>
 </body>
 
 </html>
