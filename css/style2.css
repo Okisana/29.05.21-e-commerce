@@ -1,0 +1,35 @@
+.img-size-for-card{
+    max-width: 170px;
+    max-height: 120px;
+    float: left;
+    margin-right: 10px;
+}
+.cardImage{
+    margin: 5px 5px;
+    max-width: 100%;
+}
+span{
+    color: black;
+}
+.articleEl{
+    border: none;
+}
+.articleText{
+    text-align: justify;
+}
+.grey-text{
+    color: grey;  
+}
+.pageLink{
+    text-decoration: none;
+    color: black;
+}
+.epmty{
+    height: 100px;
+}
+.epmty2{
+    height: 30px;
+}
+.p3{
+    text-align: justify;
+}
