@@ -1,35 +1,38 @@
-.img-size-for-card{
-    max-width: 170px;
-    max-height: 120px;
-    float: left;
-    margin-right: 10px;
-}
-.cardImage{
+.cardImage {
     margin: 5px 5px;
     max-width: 100%;
+    max-height: 200px;
 }
-span{
+
+span {
     color: black;
 }
-.articleEl{
+
+.articleEl {
     border: none;
 }
-.articleText{
+
+.articleText {
     text-align: justify;
 }
-.grey-text{
-    color: grey;  
+
+.grey-text {
+    color: grey;
 }
-.pageLink{
+
+.pageLink {
     text-decoration: none;
     color: black;
 }
-.epmty{
+
+.epmty {
     height: 100px;
 }
-.epmty2{
+
+.epmty2 {
     height: 30px;
 }
-.p3{
+
+.p3 {
     text-align: justify;
 }
