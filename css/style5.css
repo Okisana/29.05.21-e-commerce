@@ -13,3 +13,6 @@
 tr {
   border-bottom: 0.01rem solid grey;
 }
+.total {
+  text-align: right;
+}
