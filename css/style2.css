@@ -1,38 +1,43 @@
 .cardImage {
-    margin: 5px 5px;
-    max-width: 100%;
-    max-height: 200px;
+  margin: 5px 5px;
+  max-width: 100%;
+  max-height: 200px;
+}
+.leftImage {
+  max-width: 70%;
+  margin-left: 40px;
+  margin-top: 10px;
 }
 
 span {
-    color: black;
+  color: black;
 }
 
 .articleEl {
-    border: none;
+  border: none;
 }
 
 .articleText {
-    text-align: justify;
+  text-align: justify;
 }
 
 .grey-text {
-    color: grey;
+  color: grey;
 }
 
 .pageLink {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .epmty {
-    height: 100px;
+  height: 100px;
 }
 
 .epmty2 {
-    height: 30px;
+  height: 30px;
 }
 
 .p3 {
-    text-align: justify;
+  text-align: justify;
 }

@@ -3,7 +3,7 @@
 }
 
 .epmty5 {
-  height: 100px;
+  height: 60px;
 }
 .tdImage {
   max-width: 130px;
@@ -13,6 +13,8 @@
 tr {
   border-bottom: 0.01rem solid grey;
 }
-.total {
+.bigTotal {
   text-align: right;
+  margin-right: 120px;
+  margin-top: 20px;
 }
