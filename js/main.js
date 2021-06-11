@@ -14,7 +14,7 @@ function myFunction() {
 }
 
 // page5 Product count
-
+calculateTotal();
 const btn = document.querySelectorAll(".btn");
 
 btn.forEach((element) => {
