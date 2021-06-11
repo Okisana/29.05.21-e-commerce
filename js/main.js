@@ -14,63 +14,51 @@ function myFunction() {
 }
 
 // page5 Product count
-let number1 = 1;
-let number2 = 1;
-let price1 = 0;
-let price2 = 0;
 
-floralDress = {
-  price: 19.99,
-};
+const btn = document.querySelectorAll(".btn");
 
-blackDress = {
-  price: 22.99,
-};
+btn.forEach((element) => {
+  element.addEventListener("click", (event) => {
+    const row = event.target.closest(".productCart");
+    const quantityEl = row.querySelector(".quantity");
+    let currentQuantity = parseInt(quantityEl.textContent);
 
-$("#btnPlus1").click(function () {
-  number1 += 1;
-  $("#quantity1").html(`<span class="quantity1">${number1}</span>`);
-  price1 = (floralDress.price * number1).toFixed(2);
-  $("#totalOneProduct1").html(`<span id="totalOneProduct1">${price1}</span>`);
+    if (event.target.classList.contains("btnPlus")) {
+      currentQuantity += 1;
+    } else if (event.target.classList.contains("btnMinus")) {
+      if (currentQuantity <= 1) {
+        return;
+      }
+      currentQuantity -= 1;
+    }
+    quantityEl.textContent = currentQuantity;
+
+    const priceEl = row.querySelector(".price");
+    const lineTotalPrice = (
+      parseFloat(priceEl.textContent) * parseFloat(currentQuantity)
+    ).toFixed(2);
+    row.querySelector(".totalOneProduct").textContent = lineTotalPrice;
+    calculateTotal();
+  });
 });
 
-$("#btnPlus2").click(function () {
-  number2 += 1;
-  $("#quantity2").html(`<span class="quantity1">${number2}</span>`);
-  price2 = (blackDress.price * number2).toFixed(2);
-  $("#totalOneProduct2").html(`<span id="totalOneProduct2">${price2}</span>`);
+function calculateTotal() {
+  let totalPrice = 0;
+
+  const allPrices = document.querySelectorAll(".productCart .totalOneProduct");
+
+  allPrices.forEach((priceEl) => {
+    totalPrice += parseFloat(priceEl.textContent);
+  });
+
+  document.querySelector(".totalAll").textContent = totalPrice.toFixed(2);
+}
+
+const remove = document.querySelectorAll(".remove");
+
+remove.forEach((element) => {
+  element.addEventListener("click", (event) => {
+    event.target.closest(".productCart").remove();
+    calculateTotal();
+  });
 });
-
-$("#btnMinus1").click(function () {
-  if (number1 <= 1) {
-    return;
-  }
-  number1 -= 1;
-  $("#quantity1").html(`<span class="quantity1">${number1}</span>`);
-  let price1 = (floralDress.price * number1).toFixed(2);
-  $("#totalOneProduct1").html(`<span id="totalOneProduct1">${price1}</span>`);
-});
-
-$("#btnMinus2").click(function () {
-  if (number2 <= 1) {
-    return;
-  }
-  number2 -= 1;
-  $("#quantity2").html(`<span class="quantity1">${number2}</span>`);
-  let price2 = (blackDress.price * number2).toFixed(2);
-  $("#totalOneProduct2").html(`<span id="totalOneProduct2">${price2}</span>`);
-});
-
-$(".remove1").click(function () {
-  $(".productCart1").remove();
-});
-
-$(".remove2").click(function () {
-  $(".productCart2").remove();
-});
-
-// let all = price1 + price2;
-
-// $(".totalAll").html(`<span class="totalAll">${all}</span>`);
-
-// let allProdNumber = parseFloat(blackDress.total + floralDress.total);
